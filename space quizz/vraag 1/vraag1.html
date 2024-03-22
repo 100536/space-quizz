@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vraag 1</title>
+    <link rel="stylesheet" type="text/css" href="vraag1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <button class="button" role="button" onclick="window.location.href=''" style="float: right;">Volgende Vraag</button>
+                <button class="button" onclick="window.location.href='../Hoofdpagina/Hoofdpagina.html'" role="button">Home</button>
+            </ul>
+        </nav>
+    </header>
+    <h1>Quiz vraag</h1>
+    <div class="img">
+    <img src="../foto/aarde.jpeg" alt="Description of the image">
+    <main>
+        <div class="main">
+            <button class="btn" onclick="showBadPopup()">Button 1</button>
+            <button class="btn" onclick="showBadPopup()">Button 2</button>
+            <button class="btn" onclick="showBadPopup()">Button 3</button>
+            <button class="btn" onclick="showGoodPopup()">Button 4</button>
+        </div>
+    </main>
+
+    <div id="popup-container-good" class="popup-container">
+        <div class="popup good">
+          <span class="close" onclick="closeGoodPopup()">&times;</span>
+          <h2>Goed gedaan!</h2>
+          <p>Je hebt het geweldig gedaan. Ga zo door!</p>
+        </div>
+      </div>
+
+      <div id="popup-container-bad" class="popup-container">
+        <div class="popup bad">
+          <span class="close" onclick="closeBadPopup()">&times;</span>
+          <h2>Fout!</h2>
+          <p>Oeps, er is iets misgegaan. Probeer het opnieuw.</p>
+        </div>
+      </div>
+
+    <script src="./vraag1.js"></script>
+</body>
+</html>
