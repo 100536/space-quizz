@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vraag 4</title>
+  <link rel="stylesheet" type="text/css" href="../vragen.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <button class="button" onclick="window.location.href='../Hoofdpagina/Hoofdpagina.html'" role="button">Home</button>
+      </ul>
+    </nav>
+  </header>
+  <h1>Vraag 4</h1>
+  <h1 style="text-align: center;">Welke planeet staat bekend om zijn opvallende ringen?</h1>
+  <div class="img">
+  <img id="movable-image" src="../foto/Ringen.jpeg" alt="Description of the image" style="display: block; margin: 0 auto; width: 50%;">
+  <main>
+    <div class="main">
+      <button class="btn btn-a" onclick="checkAnswer('a')">A Mars</button>
+      <button class="btn btn-b" onclick="checkAnswer('b')">B Saturnus</button>
+      <button class="btn btn-c" onclick="checkAnswer('c')">C Neptunus</button>
+      <button class="btn btn-d" onclick="checkAnswer('d')">D Uranus</button>
+    </div>
+  </main>
+
+    <div id="popup-container-good" class="popup-container">
+        <div class="popup good">
+          <span class="close" onclick="closeGoodPopup(); window.location.href='../ruimtevraag5/ruimtevraag5.html' ">&times;</span>
+          <h2>Goed gedaan!</h2>
+          <p>Uitleg: Saturnus staat bekend om zijn opvallende ringen die bestaan uit ijs- en rotsdeeltjes die in banen rond de planeet draaien.</p>
+        </div>
+      </div>
+      <div id="popup-container-bad" class="popup-container">
+        <div class="popup bad">
+          <span class="close" onclick="closeBadPopup(); window.location.href='../ruimtevraag5/ruimtevraag5.html'">&times;</span>
+
+          <h2>Fout!</h2>
+          <p>Jammer het antwoord is fout het antwoord hoort B te zijn.</p>
+          <p>Uitleg: Saturnus staat bekend om zijn opvallende ringen die bestaan uit ijs- en rotsdeeltjes die in banen rond de planeet draaien.</p>
+        </div>
+      </div>
+
+      <div id="score" style="color: white;">Score: <span id="scoreValue">0</span></div>
+
+    <script src="../ruimtevraag4/ruimtevraag4.js"></script>
+</body>
+</html>

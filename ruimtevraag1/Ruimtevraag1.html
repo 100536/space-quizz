@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vraag 1</title>
+  <link rel="stylesheet" type="text/css" href="../vragen.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <button class="button" onclick="window.location.href='../Hoofdpagina/Hoofdpagina.html'" role="button">Home</button>
+      </ul>
+    </nav>
+  </header>
+  <h1>Vraag 1</h1>
+  <h1 style="text-align: center;">Welke planeet staat het dichtst bij de zon?</h1>
+  <div class="img">
+  <img id="movable-image" src="../foto/Solar.jpg" alt="Description of the image" style="display: block; margin: 0 auto; width: 50%;">
+  <main>
+    <div class="main">
+      <button class="btn btn-a" onclick="checkAnswer('a')">A Mars</button>
+      <button class="btn btn-b" onclick="checkAnswer('b')">B Venus</button>
+      <button class="btn btn-c" onclick="checkAnswer('c')">C Jupiter</button>
+      <button class="btn btn-d" onclick="checkAnswer('d')">D Mercurius</button>
+    </div>
+  </main>
+
+    <div id="popup-container-good" class="popup-container">
+        <div class="popup good">
+          <span class="close" onclick="closeGoodPopup(); window.location.href='../ruimtevraag2/ruimtevraag2.html' ">&times;</span>
+          <h2>Goed gedaan!</h2>
+          <p>Uitleg: Jupiter is de grootste planeet in ons zonnestelsel. Het heeft een veel grotere massa en volume dan de andere planeten, waardoor het de titel van de grootste planeet verdient.</p>
+        </div>
+      </div>
+      <div id="popup-container-bad" class="popup-container">
+        <div class="popup bad">
+          <span class="close" onclick="closeBadPopup(); window.location.href='../ruimtevraag2/ruimtevraag2.html'">&times;</span>
+
+          <h2>Fout!</h2>
+          <p>Jammer, het antwoord is fout. Het antwoord hoort te zijn C: Jupiter.</p>
+          <p>Uitleg: Jupiter is de grootste planeet in ons zonnestelsel. Het heeft een veel grotere massa en volume dan de andere planeten, waardoor het de titel van de grootste planeet verdient..</p>
+        </div>
+      </div>
+
+      <div id="score" style="color: white;">Score: <span id="scoreValue">0</span></div>
+
+    <script src="../ruimtevraag1/ruimtevraag1.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vraag 7</title>
+  <link rel="stylesheet" type="text/css" href="../vragen.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <button class="button" onclick="window.location.href='../Hoofdpagina/Hoofdpagina.html'" role="button">Home</button>
+      </ul>
+    </nav>
+  </header>
+  <h1>Vraag 7</h1>
+  <h1 style="text-align: center;">Wat is de grootste maan van Saturnus?</h1>
+  <div class="img">
+  <img id="movable-image" src="../foto/nevel.jpeg" alt="Description of the image" style="display: block; margin: 0 auto; width: 50%;">
+  <main>
+    <div class="main">
+      <button class="btn btn-a" onclick="checkAnswer('a')">A Europa</button>
+      <button class="btn btn-b" onclick="checkAnswer('b')">B Titan</button>
+      <button class="btn btn-c" onclick="checkAnswer('c')">C Enceladus</button>
+      <button class="btn btn-d" onclick="checkAnswer('d')">D Deimos</button>
+    </div>
+  </main>
+
+    <div id="popup-container-good" class="popup-container">
+        <div class="popup good">        
+          <span class="close" onclick="closeGoodPopup(); window.location.href='../ruimtevraag8/ruimtevraag8.html' ">&times;</span>
+          <h2>Goed gedaan!</h2>
+          <p> Uitleg: Titan is de grootste maan van Saturnus en de op één na grootste maan in ons zonnestelsel.</p>
+        </div>
+      </div>
+      <div id="popup-container-bad" class="popup-container">
+        <div class="popup bad">
+          <span class="close" onclick="closeBadPopup(); window.location.href='../ruimtevraag8/ruimtevraag8.html'">&times;</span>
+
+          <h2>Fout!</h2>
+          <p>Jammer het antwoord is fout het antwoord hoort B te zijn.</p>
+          <p> Uitleg: Titan is de grootste maan van Saturnus en de op één na grootste maan in ons zonnestelsel.</p>
+        </div>
+      </div>
+
+      <div id="score" style="color: white;">Score: <span id="scoreValue">0</span></div>
+
+    <script src="../ruimtevraag7/ruimtevraag7.js"></script>
+</body>
+</html>

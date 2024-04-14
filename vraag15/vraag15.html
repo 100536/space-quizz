@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vraag 15</title>
+  <link rel="stylesheet" type="text/css" href="../vragen.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <button class="button" onclick="window.location.href='../Hoofdpagina/Hoofdpagina.html'" role="button">Home</button>
+      </ul>
+    </nav>
+  </header>
+  <h1>Vraag 15</h1>
+  <h1 style="text-align: center;">Welke planeet staat bekend om zijn extreme winden, die snelheden tot 1.800 kilometer per uur kunnen bereiken, en waar de atmosfeer voornamelijk uit waterstof en helium bestaat?</h1>
+  <div class="img">
+    <img src="../foto/water.jpg" style="display: block; margin: 0 auto; width: 50%;" alt="Description of the image">
+  </div>
+  <main>
+    <div class="main">
+      <form id="answerForm" class="center">
+        <input type="text" id="userAnswer" class="btn" placeholder="Typ hier uw antwoord">
+        <button type="submit" class="btn btn-a" onclick="checkAnswer()">Indienen</button>
+      </form>
+    </div>
+  </main>
+
+
+<div id="goodPopup" class="popup-container" style="display: none;">
+  <div class="popup good">
+    <span class="close" onclick="closeGoodPopup();">&times;</span>
+    <h2>Goed gedaan!</h2>
+    <p>Je hebt het antwoord goed. De reden is: Jupiter heeft een zeer dynamische atmosfeer met krachtige winden die snelheden tot 1.800 kilometer per uur kunnen bereiken. De atmosfeer bestaat voornamelijk uit waterstof en helium. </p>
+  </div>
+</div>
+
+
+<div id="badPopup" class="popup-container" style="display: none;">
+  <div class="popup bad">
+    <span class="close" onclick="closeBadPopup();">&times;</span>
+    <h2>Fout!</h2>
+    <p>Jammer, het antwoord is fout. Het juiste antwoord is Venus.</p>
+    <p>Uitleg: Jupiter heeft een zeer dynamische atmosfeer met krachtige winden die snelheden tot 1.800 kilometer per uur kunnen bereiken. De atmosfeer bestaat voornamelijk uit waterstof en helium. </p>
+  </div>
+</div>
+
+ 
+  <div id="scorePopup" class="popup score" style="display: none;">
+    <span class="close score" onclick="closeScoreboardPopup();">&times;</span>
+    <h2>Scorebord</h2>
+    <p>Je hebt <span id="finalScore">0</span> punten behaald.</p>
+  </div>
+
+  <div id="score" style="color: white;">Score: <span id="scoreValue">0</span></div>
+  
+  <script src="./vraag15.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vraag 14</title>
+  <link rel="stylesheet" type="text/css" href="../vragen.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <button class="button" onclick="window.location.href='../Hoofdpagina/Hoofdpagina.html'" role="button">Home</button>
+      </ul>
+    </nav>
+  </header>
+  <h1>Vraag 14</h1>
+  <h1 style="text-align: center;">Noem een alledaagse technologie ontwikkeld door NASA</h1>
+  <div class="img">
+    <img src="../foto/lab.jpg" style="display: block; margin: 0 auto; width: 50%;" alt="Description of the image">
+  </div>
+  <main>
+    <div class="main">
+        <form id="answerForm" style="margin-left: 150%; width: 300px;">
+        <input type="text" id="userAnswer" class="btn" placeholder="Typ hier uw antwoord" required>
+        <button type="submit" style="margin-left:  10%; "class="btn btn-a">Indienen</button>
+      </form>
+    </div>
+  </main>
+
+  <div id="popup-container-good" class="popup-container">
+    <div class="popup good">
+      <span class="close" onclick="closeGoodPopup(); window.location.href='../nasavraag15/nasavraag15.html'">&times;</span>
+      <h2>Goed gedaan!</h2>
+      <p> GPS was inderdaad de meest belangrijkste uitvinding wat NASA heeft Gedaan.</p>
+    </div>
+  </div>
+
+  <div id="popup-container-bad" class="popup-container">
+    <div class="popup bad">
+      <span class="close" onclick="closeBadPopup(); window.location.href='../nasavraag15/nasavraag15.html'">&times;</span>
+      <h2>Fout!</h2>
+      <p>Jammer, het antwoord is fout.</p>
+      <p>juiste antwoord was GPS.</p>
+    </div>
+  </div>
+
+  <div id="score" style="color: white;">Score: <span id="scoreValue">0</span></div>
+
+  <script src="../nasavraag14/nasavraag14.js"></script>
+</body>
+</html>
